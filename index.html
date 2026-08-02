@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. NATH — Life-saving basics, taught by real doctors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="brand-mark">Dr.</span><span class="brand-name">NATH</span>
+      </div>
+      <p class="tagline">Not A Trained Healthcare-professional? Neither are you — yet.</p>
+    </div>
+    <svg class="vine-line" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path class="vine-main" d="M0,30 C60,30 90,10 150,30 C210,50 240,10 300,30 C360,50 390,10 450,30 C510,50 540,10 600,30 C660,50 690,10 750,30 C810,50 840,10 900,30 C960,50 990,10 1050,30 C1090,44 1150,30 1200,30" />
+      <path class="vine-branch" d="M150,30 C160,15 175,8 185,2" />
+      <path class="vine-branch" d="M450,30 C460,45 475,52 488,58" />
+      <path class="vine-branch" d="M750,30 C760,15 775,8 788,2" />
+      <path class="vine-branch" d="M1050,30 C1060,45 1075,52 1088,58" />
+      <circle class="vine-node" cx="150" cy="30" r="3" />
+      <circle class="vine-node" cx="450" cy="30" r="3" />
+      <circle class="vine-node" cx="750" cy="30" r="3" />
+      <circle class="vine-node" cx="1050" cy="30" r="3" />
+    </svg>
+  </header>
+
+  <main class="wrap">
+
+    <section class="hero" id="hero">
+      <h1>Real doctors. The moments that matter most.</h1>
+      <p class="hero-sub">
+        Dr. NATH takes life-saving skills out of the hospital and puts them in your hands —
+        CPR, choking response, bleeding control, and more, explained by verified medical
+        educators for people who've never set foot in med school.
+      </p>
+    </section>
+
+    <section class="why-strip" aria-label="Why this matters">
+      <div class="why-item">
+        <span class="why-icon">🌱</span>
+        <p>Most people are never taught what to do in the first minutes of an emergency — this is a place to start.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon">🌿</span>
+        <p>Every module comes from a verified medical organization, not a random upload.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon">🌳</span>
+        <p>Free, self-paced, and organized by the emergency you're most likely to encounter.</p>
+      </div>
+    </section>
+
+    <section class="categories" id="categories" aria-label="Emergency topics">
+      <h2 class="section-label">Pick what you want to learn</h2>
+      <div class="category-grid" id="categoryGrid">
+        <!-- category cards injected here -->
+      </div>
+    </section>
+
+    <section class="results" id="resultsSection" hidden>
+      <div class="results-header">
+        <div>
+          <h2 class="section-label" id="resultsTitle">Modules</h2>
+          <p class="results-note" id="resultsNote"></p>
+        </div>
+        <div class="controls">
+          <input type="search" id="searchInput" placeholder="Refine search, e.g. 'infant', 'adult'…" />
+          <select id="sortSelect">
+            <option value="relevance">Sort: Relevance</option>
+            <option value="duration_asc">Sort: Shortest first</option>
+            <option value="duration_desc">Sort: Longest first</option>
+            <option value="views_desc">Sort: Most viewed</option>
+          </select>
+        </div>
+      </div>
+      <div class="video-grid" id="videoGrid"></div>
+    </section>
+
+    <section class="sources-strip" aria-label="Trusted sources">
+      <p class="sources-label">Rooted in trusted, verified sources</p>
+      <div class="sources-list">
+        <span>American Heart Association</span>
+        <span>American Red Cross</span>
+        <span>Mayo Clinic</span>
+        <span>American Stroke Association</span>
+        <span>Epilepsy Foundation</span>
+      </div>
+    </section>
+
+    <section class="progress-section" id="progressSection" aria-label="Your progress">
+      <h2 class="section-label">Your progress</h2>
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" id="progressFill"></div>
+      </div>
+      <p id="progressText">0 of 0 topics completed</p>
+      <div class="badge-row" id="badgeRow"></div>
+    </section>
+
+    <section class="faq" aria-label="About Dr. NATH">
+      <h2 class="section-label">Before you dig in</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Is this a real course?</h3>
+          <p>No — Dr. NATH is a curated starting point, not a certification. Think of it as the difference between knowing how to swim and being a lifeguard. If you want certification, look into a local Red Cross or AHA course.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Where does the content come from?</h3>
+          <p>Every video is pulled live from YouTube, filtered to channels run by recognized medical organizations. Nothing here is uploaded by us.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What if I'm in an emergency right now?</h3>
+          <p>Stop reading and call your local emergency number immediately. This app is for learning ahead of time, not for real-time guidance during a crisis.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="video-modal" id="videoModal" hidden>
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <div class="modal-video-wrap" id="modalVideoWrap"></div>
+      <h3 id="modalTitle"></h3>
+      <p id="modalMeta"></p>
+      <button class="btn-complete" id="markCompleteBtn">Mark topic as learned</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <div class="brand"><span class="brand-mark">Dr.</span><span class="brand-name">NATH</span></div>
+        <p class="footer-tag">Knowledge that grows with you.</p>
+      </div>
+      <p class="footer-disclaimer">Content sourced via the YouTube Data API from verified medical organizations. Dr. NATH is an educational tool and is not a substitute for professional medical care — in a real emergency, call your local emergency number first.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
