@@ -33,12 +33,77 @@
   <main class="wrap">
 
     <section class="hero" id="hero">
-      <h1>Real doctors. The moments that matter most.</h1>
-      <p class="hero-sub">
-        Dr. NATH takes life-saving skills out of the hospital and puts them in your hands —
-        CPR, choking response, bleeding control, and more, explained by verified medical
-        educators for people who've never set foot in med school.
-      </p>
+      <div class="hero-copy">
+        <h1>Real doctors. The moments that matter most.</h1>
+        <p class="hero-sub">
+          Dr. NATH takes life-saving skills out of the hospital and puts them in your hands —
+          CPR, choking response, bleeding control, and more, explained by verified medical
+          educators for people who've never set foot in med school.
+        </p>
+        <div class="hero-cta-row">
+          <a href="#categories" class="btn-primary">Start learning</a>
+          <a href="#flowchart" class="btn-ghost">Not sure where? Triage me →</a>
+        </div>
+      </div>
+
+      <div class="iso-scene" id="isoScene" aria-hidden="true">
+        <svg viewBox="0 0 460 420" class="iso-svg">
+          <ellipse cx="230" cy="380" rx="170" ry="24" fill="var(--pine)" opacity="0.08"/>
+          <g class="iso-grid" opacity="0.35">
+            <polygon points="70,370 230,330 390,370 230,410" fill="none" stroke="var(--moss-light)" stroke-width="1"/>
+            <polygon points="110,370 230,340 350,370 230,400" fill="none" stroke="var(--moss-light)" stroke-width="1"/>
+            <polygon points="150,370 230,350 310,370 230,390" fill="none" stroke="var(--moss-light)" stroke-width="1"/>
+          </g>
+
+          <!-- orbiting cube: pill -->
+          <g class="iso-cube iso-float-a" transform="translate(40,60)">
+            <polygon points="40,0 80,20 40,40 0,20" fill="var(--gold)"/>
+            <polygon points="0,20 40,40 40,80 0,60" fill="var(--amber)"/>
+            <polygon points="40,40 80,20 80,60 40,80" fill="#a8721f"/>
+            <text x="30" y="34" font-size="18">💊</text>
+          </g>
+
+          <!-- orbiting cube: bandage -->
+          <g class="iso-cube iso-float-b" transform="translate(340,40)">
+            <polygon points="40,0 80,20 40,40 0,20" fill="var(--clay)"/>
+            <polygon points="0,20 40,40 40,80 0,60" fill="#7e4126"/>
+            <polygon points="40,40 80,20 80,60 40,80" fill="#5f2f1b"/>
+            <text x="30" y="34" font-size="18">🩹</text>
+          </g>
+
+          <!-- central console cube (large) -->
+          <g class="iso-cube-main" transform="translate(140,140)">
+            <polygon points="90,0 180,45 90,90 0,45" fill="var(--moss-light)"/>
+            <polygon points="0,45 90,90 90,190 0,145" fill="var(--moss)"/>
+            <polygon points="90,90 180,45 180,145 90,190" fill="var(--pine)"/>
+            <text x="55" y="60" font-size="30">❤️</text>
+            <text x="48" y="130" font-size="13" fill="#fff" font-family="Fraunces, serif" font-weight="600">Dr. NATH</text>
+          </g>
+
+          <!-- orbiting cube: brain -->
+          <g class="iso-cube iso-float-c" transform="translate(60,260)">
+            <polygon points="36,0 72,18 36,36 0,18" fill="var(--lavender)"/>
+            <polygon points="0,18 36,36 36,72 0,54" fill="#5c5a80"/>
+            <polygon points="36,36 72,18 72,54 36,72" fill="#454367"/>
+            <text x="26" y="30" font-size="16">🧠</text>
+          </g>
+
+          <!-- orbiting cube: thermometer -->
+          <g class="iso-cube iso-float-a" transform="translate(350,260)">
+            <polygon points="36,0 72,18 36,36 0,18" fill="#d68a2e"/>
+            <polygon points="0,18 36,36 36,72 0,54" fill="#a8661c"/>
+            <polygon points="36,36 72,18 72,54 36,72" fill="#7d4a12"/>
+            <text x="26" y="30" font-size="16">🌡️</text>
+          </g>
+
+          <!-- floating progress card -->
+          <g class="iso-card iso-float-b" transform="translate(250,320)">
+            <rect width="150" height="56" rx="10" fill="#ffffff" stroke="var(--line)"/>
+            <text x="14" y="24" font-size="11" fill="var(--ink-soft)" font-family="Work Sans, sans-serif">Topics covered</text>
+            <text x="14" y="44" font-size="18" font-weight="700" fill="var(--pine)" font-family="Fraunces, serif">12 modules</text>
+          </g>
+        </svg>
+      </div>
     </section>
 
     <section class="why-strip" aria-label="Why this matters">
@@ -56,6 +121,105 @@
       </div>
     </section>
 
+    <section class="capabilities reveal" aria-label="What Dr. NATH does">
+      <h2 class="section-label">What Dr. NATH actually does</h2>
+      <p class="cap-sub">Not just a video library — here's the full scope of what's running under the hood.</p>
+      <div class="cap-grid">
+        <div class="cap-item">
+          <span class="cap-icon">🌐</span>
+          <h3>Live API-sourced content</h3>
+          <p>Every module streams in real time from the YouTube Data API v3, filtered to six verified medical organizations — not static uploads.</p>
+        </div>
+        <div class="cap-item">
+          <span class="cap-icon">🌱</span>
+          <h3>Symptom-based triage</h3>
+          <p>The flowchart routes you from "what's happening" to the exact module you need in two clicks — a real decision tool, not decoration.</p>
+        </div>
+        <div class="cap-item">
+          <span class="cap-icon">🔍</span>
+          <h3>Search, sort & filter</h3>
+          <p>Refine any topic by keyword, and sort results by duration or popularity — genuine interaction with live data.</p>
+        </div>
+        <div class="cap-item">
+          <span class="cap-icon">📈</span>
+          <h3>Progress tracking</h3>
+          <p>Completion is saved server-side against an anonymous browser ID — no account, no email, no login screen.</p>
+        </div>
+        <div class="cap-item">
+          <span class="cap-icon">🛡️</span>
+          <h3>Graceful degradation</h3>
+          <p>If the YouTube API is down, rate-limited, or unkeyed, the app automatically falls back to a curated verified video per topic — it never just breaks.</p>
+        </div>
+        <div class="cap-item">
+          <span class="cap-icon">🖥️</span>
+          <h3>Load-balanced deployment</h3>
+          <p>Runs identically on two web servers behind a round-robin load balancer, so no single server is a point of failure.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal flowchart" id="flowchart" aria-label="Emergency triage flowchart">
+      <h2 class="section-label">Not sure where to start? Follow the flow.</h2>
+      <p class="flow-sub">This isn't decoration — click any leaf to jump straight to that module.</p>
+
+      <div class="flow-root">🩺 What's happening right now?</div>
+
+      <div class="flow-branches">
+        <div class="flow-branch">
+          <div class="branch-head">💓 Breathing or circulation</div>
+          <div class="branch-stem">
+            <button class="branch-leaf" data-category="cpr">Not breathing / no pulse</button>
+            <button class="branch-leaf" data-category="choking">Clutching throat, can't talk</button>
+            <button class="branch-leaf" data-category="drowning">Pulled from water, not breathing</button>
+          </div>
+        </div>
+
+        <div class="flow-branch">
+          <div class="branch-head">🩸 Visible injury</div>
+          <div class="branch-stem">
+            <button class="branch-leaf" data-category="bleeding">Heavy, uncontrolled bleeding</button>
+            <button class="branch-leaf" data-category="burns">Skin burned or scalded</button>
+            <button class="branch-leaf" data-category="fractures">Can't bear weight, deformed limb</button>
+          </div>
+        </div>
+
+        <div class="flow-branch">
+          <div class="branch-head">🌡️ Environmental exposure</div>
+          <div class="branch-stem">
+            <button class="branch-leaf" data-category="heat">Very hot, confused, not sweating</button>
+            <button class="branch-leaf" data-category="hypothermia">Shivering hard, cold, confused</button>
+            <button class="branch-leaf" data-category="poisoning">Swallowed or exposed to toxin</button>
+          </div>
+        </div>
+
+        <div class="flow-branch">
+          <div class="branch-head">🧠 Neurological / allergic</div>
+          <div class="branch-stem">
+            <button class="branch-leaf" data-category="stroke">Face drooping, slurred speech</button>
+            <button class="branch-leaf" data-category="seizure">Convulsing, shaking uncontrollably</button>
+            <button class="branch-leaf" data-category="allergic">Swelling, hives after exposure</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal stats-bar" aria-label="Project scope at a glance">
+      <div class="stat"><span class="stat-num">12</span><span class="stat-label">emergency topics covered</span></div>
+      <div class="stat"><span class="stat-num">6</span><span class="stat-label">verified medical organizations</span></div>
+      <div class="stat"><span class="stat-num">Live</span><span class="stat-label">content via the YouTube Data API</span></div>
+      <div class="stat"><span class="stat-num">0</span><span class="stat-label">accounts or logins required</span></div>
+    </section>
+
+    <section class="reveal how-it-works" aria-label="How Dr. NATH works">
+      <h2 class="section-label">How it works</h2>
+      <div class="steps-grid">
+        <div class="step"><span class="step-num">1</span><h3>Find your topic</h3><p>Browse the 12 topics directly, or use the flowchart above to triage by symptom.</p></div>
+        <div class="step"><span class="step-num">2</span><h3>Watch a verified module</h3><p>Search, sort by length or popularity, and stream a video sourced live from a trusted organization.</p></div>
+        <div class="step"><span class="step-num">3</span><h3>Mark it learned</h3><p>One click saves your progress — no account needed, just your browser.</p></div>
+        <div class="step"><span class="step-num">4</span><h3>Track your growth</h3><p>Watch your completion bar and badges fill in as you cover more ground.</p></div>
+      </div>
+    </section>
+
     <section class="categories" id="categories" aria-label="Emergency topics">
       <h2 class="section-label">Pick what you want to learn</h2>
       <div class="category-grid" id="categoryGrid">
@@ -63,7 +227,7 @@
       </div>
     </section>
 
-    <section class="results" id="resultsSection" hidden>
+    <section class="results cinematic" id="resultsSection" hidden>
       <div class="results-header">
         <div>
           <h2 class="section-label" id="resultsTitle">Modules</h2>
@@ -82,18 +246,19 @@
       <div class="video-grid" id="videoGrid"></div>
     </section>
 
-    <section class="sources-strip" aria-label="Trusted sources">
+    <section class="reveal sources-strip" aria-label="Trusted sources">
       <p class="sources-label">Rooted in trusted, verified sources</p>
       <div class="sources-list">
         <span>American Heart Association</span>
         <span>American Red Cross</span>
         <span>Mayo Clinic</span>
         <span>American Stroke Association</span>
+        <span>American Academy of Allergy, Asthma &amp; Immunology</span>
         <span>Epilepsy Foundation</span>
       </div>
     </section>
 
-    <section class="progress-section" id="progressSection" aria-label="Your progress">
+    <section class="reveal progress-section" id="progressSection" aria-label="Your progress">
       <h2 class="section-label">Your progress</h2>
       <div class="progress-bar-track">
         <div class="progress-bar-fill" id="progressFill"></div>
@@ -102,7 +267,7 @@
       <div class="badge-row" id="badgeRow"></div>
     </section>
 
-    <section class="faq" aria-label="About Dr. NATH">
+    <section class="reveal faq" aria-label="About Dr. NATH">
       <h2 class="section-label">Before you dig in</h2>
       <div class="faq-grid">
         <div class="faq-item">
