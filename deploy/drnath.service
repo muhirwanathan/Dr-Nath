@@ -1,0 +1,21 @@
+# Example systemd unit for running Dr. NATH persistently on Web01 and Web02.
+# Copy to /etc/systemd/system/drnath.service on each server, then:
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable drnath
+#   sudo systemctl start drnath
+
+[Unit]
+Description=Dr. NATH - Life-saving basics for non-medical people
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/dr-nath
+EnvironmentFile=/home/ubuntu/dr-nath/.env
+ExecStart=/usr/bin/node /home/ubuntu/dr-nath/server.js
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

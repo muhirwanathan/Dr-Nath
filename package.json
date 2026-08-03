@@ -1,0 +1,14 @@
+{
+  "name": "dr-nath",
+  "version": "1.0.0",
+  "description": "Dr. NATH - Life-saving basics taught by real doctors, for people outside the medical field.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-fetch": "^2.7.0"
+  }
+}
