@@ -151,4 +151,4 @@ Dr. NATH is an educational tool, not a certified first-aid course or medical adv
 - **Web01 (live):** _add public URL here, e.g. https://c47e7ff2277f.bc49e1b9.alu-cod.online_
 - **Web02 (live):** _add public URL here, e.g. https://fd2e7127fa92.1de0cb85.alu-cod.online_
 - **Load balancer (Lb01):** not available in this submission — see [`DEPLOYMENT-NOTES.md`](./DEPLOYMENT-NOTES.md)
-- **Demo video:** _add your video link here_
+- **Demo video:** https://youtu.be/5k-6BP_OCsY
