@@ -144,6 +144,10 @@ sudo systemctl restart haproxy
 
 Dr. NATH is an educational tool, not a certified first-aid course or medical advice. In a real emergency, call your local emergency number first.
 
+Note on GitHub Contributors
+
+The repository's GitHub contributor list includes GAMA due to an accidental local Git identity configuration during one commit. This was a configuration error, and the commit was made by me as part of the development of this project. My Git configuration has since been corrected, and subsequent commits have been made using my correct GitHub identity, muhirwanathan.
+
 ---
 
 ## Links
