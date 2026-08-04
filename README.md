@@ -51,7 +51,7 @@ Random-fact or novelty apps don't teach anything actionable. Dr. NATH is built a
 
 ### 3. Set up and run
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/muhirwanathan/Dr-Nath/
 cd dr-nath
 cp .env.example .env
 # edit .env and paste your YOUTUBE_API_KEY
@@ -81,7 +81,7 @@ The app is deployed across two web servers (**Web01**, **Web02**) behind a load 
 ### Step 1 — Deploy the app to each web server
 On both Web01 and Web02:
 ```bash
-git clone <your-repo-url> ~/dr-nath
+git clone https://github.com/muhirwanathan/Dr-Nath/
 cd ~/dr-nath
 cp .env.example .env
 # edit .env with your real YOUTUBE_API_KEY
