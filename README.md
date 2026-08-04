@@ -135,7 +135,7 @@ sudo systemctl restart haproxy
 ## Credits & attribution
 
 - Video content and metadata via the **[YouTube Data API v3](https://developers.google.com/youtube/v3)**, Google/YouTube
-- Training content in this app is sourced from and credited to: **American Heart Association**, **American Red Cross**, **Mayo Clinic**, **American Stroke Association**, **American Academy of Allergy, Asthma & Immunology**, and the **Epilepsy Foundation** — all rights to their respective videos belong to them
+- Training content in this app is sourced from and credited to: **American Heart Association**, **American Red Cross**, **Mayo Clinic**, **American Stroke Association**, **American Academy of Allergy, Asthma & Immunology**, and the **Epilepsy Foundation** ; all rights to their respective videos belong to them
 - Fonts: [Fraunces](https://fonts.google.com/specimen/Fraunces) and [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts
 
 ---
